@@ -17,7 +17,8 @@ public class DemoClassTest extends BaseClass {
 
 		System.out.println(data);
 
-		
+		System.out.println(data);
+
 		dUtils.insertDataToDatabase(connection, "insert into lead values('Rajesh', 'Madhur', 'Qspiders');");
 
 
