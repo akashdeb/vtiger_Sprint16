@@ -37,7 +37,7 @@ public class BaseClass {
 	
 	public Connection connection;
 	
-	@BeforeSuite
+	@BeforeSuite(groups = {"smoke", "regression"})
 	public void bsConfig() throws SQLException {
 		
 		Driver driver = new Driver();
@@ -50,7 +50,7 @@ public class BaseClass {
 		
 	}
 	
-	@BeforeClass
+	@BeforeClass(groups = {"smoke", "regression"})
 	public void bcConfig() throws IOException {
 		
 		String browser=fUtils.fetchDataFromPropertFile(IPathConstant.BROWSER_KEY);
@@ -75,7 +75,7 @@ public class BaseClass {
 		sDriver = driver;
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"smoke", "regression"})
 	public void bmConfig() throws IOException {
 		
 		String username=fUtils.fetchDataFromPropertFile(IPathConstant.USERNAME_KEY);
@@ -88,7 +88,7 @@ public class BaseClass {
 		
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups = {"smoke", "regression"})
 	public void amConfig() {
 		
 		HomePage home = new HomePage(driver);
@@ -96,14 +96,14 @@ public class BaseClass {
 		System.out.println("The User has logged out");
 	}
 	
-	@AfterClass
+	@AfterClass(groups = {"smoke", "regression"})
 	public void acConfig() {
 		
 		driver.quit();
 		System.out.println("The Browser has closed");
 	}
 	
-	@AfterSuite
+	@AfterSuite(groups = {"smoke", "regression"})
 	public void asConfig() throws SQLException {
 		connection.close();
 

@@ -21,7 +21,7 @@ import pomRepository.OrganizationsPage;
 
 public class ToCreateOpportunityTest extends BaseClass {
 	
-	@Test
+	@Test(groups = "regression")
 	public void ToCreateOpportunityWithOrganizationAndCampaignDetailsAndVerifyOpportunityTest() throws EncryptedDocumentException, IOException {
 		
 		int randomNo = jUtils.generateRandomNumber(10000);

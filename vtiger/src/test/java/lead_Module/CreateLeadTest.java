@@ -18,7 +18,7 @@ import pomRepository.LeadPage;
 
 public class CreateLeadTest extends BaseClass {
 	
-	@Test(retryAnalyzer = genericUtility.IRetryAnalyserImplementationClass.class)
+	@Test( groups = "smoke", retryAnalyzer = genericUtility.IRetryAnalyserImplementationClass.class)
 	public void createLeadAndVerifyLeadInformationTest() throws EncryptedDocumentException, IOException {
 		//Test Data
 		String leadSalutation = eUtils.fetchStringDataFromExcelSheet(IPathConstant.LEAD_SHEET_NAME, 1, 0);

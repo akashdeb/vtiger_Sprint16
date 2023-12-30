@@ -1,41 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-16T16:04:20 IST" name="Default suite" finished-at="2023-12-16T16:04:34 IST" duration-ms="14466">
+  <suite started-at="2023-12-30T08:03:38Z" name="Suite" finished-at="2023-12-30T08:04:41Z" duration-ms="62899">
     <groups>
+      <group name="smoke">
+        <method signature="CreateLeadTest.createLeadAndVerifyLeadInformationTest()[pri:0, instance:lead_Module.CreateLeadTest@67d18ed7]" name="createLeadAndVerifyLeadInformationTest" class="lead_Module.CreateLeadTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-12-16T16:04:20 IST" name="Default test" finished-at="2023-12-16T16:04:34 IST" duration-ms="14466">
-      <class name="demo_Module.DemoClassTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:demo_Module.DemoClassTest@563f38c4]" started-at="2023-12-16T16:04:19 IST" name="bsConfig" finished-at="2023-12-16T16:04:20 IST" duration-ms="336" status="PASS">
+    <test started-at="2023-12-30T08:03:38Z" name="Test" finished-at="2023-12-30T08:04:41Z" duration-ms="62899">
+      <class name="opportunity_Module.ToCreateOpportunityTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:opportunity_Module.ToCreateOpportunityTest@5c44c582]" started-at="2023-12-30T08:03:38Z" name="bsConfig" finished-at="2023-12-30T08:03:38Z" duration-ms="425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:demo_Module.DemoClassTest@563f38c4]" started-at="2023-12-16T16:04:20 IST" name="bcConfig" finished-at="2023-12-16T16:04:24 IST" duration-ms="3961" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:demo_Module.DemoClassTest@563f38c4]" started-at="2023-12-16T16:04:24 IST" name="bmConfig" finished-at="2023-12-16T16:04:28 IST" duration-ms="3969" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="demoTest()[pri:0, instance:demo_Module.DemoClassTest@563f38c4]" started-at="2023-12-16T16:04:28 IST" name="demoTest" finished-at="2023-12-16T16:04:28 IST" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demoTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:demo_Module.DemoClassTest@563f38c4]" started-at="2023-12-16T16:04:28 IST" name="amConfig" finished-at="2023-12-16T16:04:34 IST" duration-ms="5656" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:demo_Module.DemoClassTest@563f38c4]" started-at="2023-12-16T16:04:34 IST" name="acConfig" finished-at="2023-12-16T16:04:34 IST" duration-ms="669" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:demo_Module.DemoClassTest@563f38c4]" started-at="2023-12-16T16:04:34 IST" name="asConfig" finished-at="2023-12-16T16:04:34 IST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:opportunity_Module.ToCreateOpportunityTest@5c44c582]" started-at="2023-12-30T08:04:42Z" name="asConfig" finished-at="2023-12-30T08:04:42Z" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- demo_Module.DemoClassTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- opportunity_Module.ToCreateOpportunityTest -->
+      <class name="lead_Module.CreateLeadTest">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:lead_Module.CreateLeadTest@67d18ed7]" started-at="2023-12-30T08:03:39Z" name="bcConfig" finished-at="2023-12-30T08:03:49Z" duration-ms="10241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:lead_Module.CreateLeadTest@67d18ed7]" started-at="2023-12-30T08:03:49Z" name="bmConfig" finished-at="2023-12-30T08:04:05Z" duration-ms="16046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createLeadAndVerifyLeadInformationTest()[pri:0, instance:lead_Module.CreateLeadTest@67d18ed7]" started-at="2023-12-30T08:04:05Z" name="createLeadAndVerifyLeadInformationTest" finished-at="2023-12-30T08:04:37Z" duration-ms="32465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeadAndVerifyLeadInformationTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:lead_Module.CreateLeadTest@67d18ed7]" started-at="2023-12-30T08:04:37Z" name="amConfig" finished-at="2023-12-30T08:04:41Z" duration-ms="3071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:lead_Module.CreateLeadTest@67d18ed7]" started-at="2023-12-30T08:04:41Z" name="acConfig" finished-at="2023-12-30T08:04:41Z" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- lead_Module.CreateLeadTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
